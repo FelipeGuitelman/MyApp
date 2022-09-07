@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+
+<body id="fondo" class="body">
+  <div class="container">
+    <h1>Contador</h1>
+    <button class="boton resetear" onclick="stop()">Resetear</button>
+    <div class="num">
+      <div class="col">
+        <button class="boton disminuir">Disminuir</button>
+        <input type="button" value="Iniciar Cronómetro" id="play-pause" class="paused" onclick="playPause()">
+      </div>
+      <span id="stopwatch">0</span>
+      <div class="col">
+        <button class="boton aumentar">Aumentar</button>
+        <input type="button" value="Iniciar Temporizador" id="play-pause-temp" class="pausedTemp" onclick="playPauseTemp()">      </div>
+    </div>
+    <div>
+      <button id="cuenta-vueltas" hidden onclick="marcarVuelta()">Marcar Vuelta</button>
+      <button id="borra-vueltas" hidden onclick="borrarVueltas()">Borrar Vueltas</button>
+    </div>
+    <ul id="output" class="vueltas"></ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

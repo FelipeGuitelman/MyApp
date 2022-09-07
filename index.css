@@ -1,0 +1,85 @@
+.body {
+  background-image: url('https://static.filadd.com/files/f%23104477/html/external_resources/bg1.png');
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.delete {
+  margin-right: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #699840;
+  text-transform: uppercase;
+}
+
+.num {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 5em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+li {
+  font-size: 1em;
+  display: flex;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #699840;
+  text-transform: uppercase;
+}
+
+input {
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #699840;
+  text-transform: uppercase;
+}
+
+.parpadea {
+  background-image: url('https://static.filadd.com/files/f%23104477/html/external_resources/bg1.png');
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+  background: linear-gradient(150deg, #D50000, #FFFFFF0D, #D50000);
+  background-size: 500% 500%;
+  animation: BgGradient 2s ease infinite;
+}
+
+@keyframes BgGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
