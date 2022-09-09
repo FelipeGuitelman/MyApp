@@ -4,10 +4,72 @@
   font-family: 'Roboto Mono', monospace;
   position: relative;
   font-family: 'Roboto Mono', monospace;
+}
+
+.radio {
+  display: flex;
+}
+
+.vueltas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -8px;
+  left: -1px;
   position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: none;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: none;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: #699840;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: none;
 }
 
 .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.container2 {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,6 +90,7 @@
 
 .num {
   display: flex;
+  position: static;
 }
 
 .col {

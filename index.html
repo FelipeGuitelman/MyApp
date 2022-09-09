@@ -11,6 +11,12 @@
 <body id="fondo" class="body">
   <div class="container">
     <h1>Contador</h1>
+    <div class="radio">
+      <input type="radio" name="status" value="contador" id="contador" onclick="contador()" checked> <label
+        for="interesado">Contador</label>
+      <input type="radio" name="status" value="tiempo" id="tiempo" onclick="tiempo()"> <label
+        for="indeciso">Tiempo</label>
+    </div>
     <button class="boton resetear" onclick="stop()">Resetear</button>
     <div class="num">
       <div class="col">
@@ -18,10 +24,15 @@
         <input type="button" value="Iniciar Cronómetro" id="play-pause" class="paused" onclick="playPause()">
       </div>
       <span id="stopwatch">0</span>
+      <span type = "number" id="stopwatch1" hidden contenteditable="true" onchange="actualizar()">00:00:00</span>
       <div class="col">
         <button class="boton aumentar">Aumentar</button>
-        <input type="button" value="Iniciar Temporizador" id="play-pause-temp" class="pausedTemp" onclick="playPauseTemp()">      </div>
+        <input type="button" value="Iniciar Temporizador" id="play-pause-temp" class="pausedTemp"
+          onclick="playPauseTemp()" disabled>
+      </div>
     </div>
+  </div>
+  <div class="vueltas">
     <div>
       <button id="cuenta-vueltas" hidden onclick="marcarVuelta()">Marcar Vuelta</button>
       <button id="borra-vueltas" hidden onclick="borrarVueltas()">Borrar Vueltas</button>
@@ -30,5 +41,6 @@
   </div>
   <script src="index.js"></script>
 </body>
+
 
 </html>
